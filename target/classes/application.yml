@@ -1,0 +1,21 @@
+#server:
+#  servlet:
+#    context-path: /world
+
+
+mycar:
+   band: BYD
+   price: 10000
+
+#默认false, 设置true时,启动时会打印出哪些组件被自定加载,哪些没有加载
+debug: true
+
+
+spring:
+   mvc:
+#      static-path-pattern: /resources/**  #静态资源访问前缀,默认是全匹配 /**,不加前缀 即访问路径上加上前缀 如http://locahost:8080/resources/adsf.jpg
+      hiddenmethod:
+         filter:
+            enabled: false
+   resources:
+      static-locations: classpath:/haha/   #静态资源访问路径
